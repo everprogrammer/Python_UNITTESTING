@@ -37,5 +37,4 @@ class Course():
         student = self.search_student(studentObj)
         if not student:
             raise KeyError(f'Invalid name, {studentObj.name} does not exist!')
-
         return (student['midterm_mark'] + student['final_mark']) / 2
