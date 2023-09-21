@@ -16,14 +16,14 @@ class Course():
                 'final_mark': 17
             },
             {
-                's_name': 'James',
-                'midterm_mark': 20,
-                'final_mark': 17
+                's_name': 'Claire',
+                'midterm_mark': 10,
+                'final_mark': 12
             },
             {
-                's_name': 'Claire',
-                'midterm_mark': 15,
-                'final_mark': 12
+                's_name': 'James',
+                'midterm_mark': 8,
+                'final_mark': 9
             },
             ]
     
