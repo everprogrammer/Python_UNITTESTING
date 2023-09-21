@@ -9,11 +9,11 @@ class Student():
     def set_name(self, name):
         self.name = name
 
-    def get_avg(self):
+    def get_avg(self):  # boiler-plate/pass-through (DOES NOT HAVE EXTRA LOGIC)
         avg = self.courseObj.calc_avg(self)
         return avg
 
-    def get_avg_verbose(self):
+    def get_avg_verbose(self):  # boiler-plate (HAS EXTRA LOGIC)
         avg = self.courseObj.calc_avg(self)
 
         if avg > 18: 
