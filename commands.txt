@@ -1,0 +1,17 @@
+How to run tests?
+    1. on a file?
+        >python -m unittest <folder_name>.<file_name> -v
+    2. on a folder?
+        >python -m unittest discover -s <folder_name>
+
+How to create test log file?
+    > python -m unittest discover -s <folder_name> -v &> log.txt
+
+How to use coverage library?
+    > coverage run --source=./<folder_name> -m unittest discover -s <folder_name> -v
+
+See report of coverage?
+    > coverage report
+
+See report of coverage in html?
+    > coverage html -d <folder_to_be_created>

@@ -1,0 +1,18 @@
+test_calAvgReturnsNone (test_integration_course.TestIntegrationCourse.test_calAvgReturnsNone) ... ok
+test_calcAvgReturnsVal (test_integration_course.TestIntegrationCourse.test_calcAvgReturnsVal) ... ok
+test_checkSampleDoesNotExist (test_integration_course.TestIntegrationCourse.test_checkSampleDoesNotExist) ... ok
+test_checkSampleExists (test_integration_course.TestIntegrationCourse.test_checkSampleExists) ... ok
+test_isObjectCorrectType (test_integration_course.TestIntegrationCourse.test_isObjectCorrectType) ... ok
+test_searchStudentObjReturnsNone (test_integration_course.TestIntegrationCourse.test_searchStudentObjReturnsNone) ... ok
+test_searchStudentObjReturnsVal (test_integration_course.TestIntegrationCourse.test_searchStudentObjReturnsVal) ... ok
+test_getAvgRaisesError (test_integration_student.TestIntegrationStudent.test_getAvgRaisesError) ... ok
+test_getAvgReturnsVal (test_integration_student.TestIntegrationStudent.test_getAvgReturnsVal) ... ok
+test_getAvgVerbose (test_integration_student.TestIntegrationStudent.test_getAvgVerbose)
+Testing boiler-plate (has extra logic): should be unit/integration tested ... ok
+test_isObjectCorrectType (test_integration_student.TestIntegrationStudent.test_isObjectCorrectType) ... ok
+test_studentContainsCourseObj (test_integration_student.TestIntegrationStudent.test_studentContainsCourseObj) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

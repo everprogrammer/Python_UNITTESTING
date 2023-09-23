@@ -1,0 +1,40 @@
+test_add (test_calculator.TestCalculator.test_add) ... ok
+test_div (test_calculator.TestCalculator.test_div) ... ok
+test_mul (test_calculator.TestCalculator.test_mul) ... ok
+test_sub (test_calculator.TestCalculator.test_sub) ... ok
+test_calAvgReturnsNone (test_course.TestCourse.test_calAvgReturnsNone) ... ok
+test_calAvgReturnsVal (test_course.TestCourse.test_calAvgReturnsVal) ... ok
+test_canCreateObject (test_course.TestCourse.test_canCreateObject) ... ok
+test_courseInfoExists (test_course.TestCourse.test_courseInfoExists) ... ok
+test_searchStudentObjReturnNone (test_course.TestCourse.test_searchStudentObjReturnNone) ... ok
+test_searchStudentObjReturnsVal (test_course.TestCourse.test_searchStudentObjReturnsVal)
+name in DB -> studnetObj ... ok
+test_callFizzBuzzReturn1WhenPassed1 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturn1WhenPassed1) ... ok
+test_callFizzBuzzReturn2WhenPassed2 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturn2WhenPassed2) ... ok
+test_callFizzBuzzReturnBuzzWhenPassed5 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturnBuzzWhenPassed5) ... ok
+test_callFizzBuzzReturnBuzzWhenPassedMultiple5 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturnBuzzWhenPassedMultiple5) ... ok
+test_callFizzBuzzReturnFizzBuzzWhenPassed15 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturnFizzBuzzWhenPassed15) ... ok
+test_callFizzBuzzReturnFizzWhenPassed3 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturnFizzWhenPassed3) ... ok
+test_callFizzBuzzReturnFizzWhenPassedMultiple3 (test_fizzbuzz.TestFizzBuzz.test_callFizzBuzzReturnFizzWhenPassedMultiple3) ... ok
+test_canCallFizzBuzz (test_fizzbuzz.TestFizzBuzz.test_canCallFizzBuzz) ... ok
+test_canCreateInstance (test_player.TestPlayer.test_canCreateInstance) ... ok
+test_firstNameNotEmpty (test_player.TestPlayer.test_firstNameNotEmpty) ... ok
+test_firstNameNotStr (test_player.TestPlayer.test_firstNameNotStr) ... ok
+test_lastNameNotEmpty (test_player.TestPlayer.test_lastNameNotEmpty) ... ok
+test_lastNameNotStr (test_player.TestPlayer.test_lastNameNotStr) ... ok
+test_nickname (test_player.TestPlayer.test_nickname) ... ok
+test_playerIDNumber (test_player.TestPlayer.test_playerIDNumber) ... ok
+test_speedNotInt (test_player.TestPlayer.test_speedNotInt) ... ok
+test_speedNotNegative (test_player.TestPlayer.test_speedNotNegative) ... ok
+test_canCreateObj (test_student.TestStudent.test_canCreateObj) ... ok
+test_getAvg (test_student.TestStudent.test_getAvg)
+Testing boiler-plate (has not extra logic): should be skipped in unittest ... ok
+test_getAvgVerbose (test_student.TestStudent.test_getAvgVerbose)
+Testing boiler-plate (has extra logic): should be unit/integration tested ... ok
+test_setName (test_student.TestStudent.test_setName)
+Testing setters/getters in unit/integration testing can be skipped ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.004s
+
+OK
