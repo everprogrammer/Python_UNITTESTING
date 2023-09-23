@@ -9,6 +9,7 @@ class Files:
         self.filename = None
         if filename:
             self.set_filename(filename)
+        self.memory = None
 
     def set_filename(self, filename):
         self.filename = os.path.join(self.cwd, filename)
@@ -37,3 +38,8 @@ class Files:
 
     def get_memory(self):
         return self.memory
+
+# f = Files('data.txt')
+# data = f.read_file()
+# print(data)
+# ['Line 1 of test file!\n', 'Line 2 of test file!\n', 'Line 3 of test file!']
