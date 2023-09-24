@@ -16,6 +16,11 @@ unittests -> isolated; decoupled from any external dependencies
 """
 
 class TestFiles(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fObj = Files('fake.txt')
+        
     def test_canCreateObj(self):
         Obj1 = Files()
         Obj2 = Files('not-exist.txt')
@@ -38,9 +43,15 @@ class TestFiles(unittest.TestCase):
         # data = mockedFile.read()
         # self.assertEqual(data, "EXPECTED")
 
-        fObj = Files('fake.txt')
-        with mock.patch('builtins.open', mock.mock_open(read_data='EXPECTED')):
-            data = fObj.read_file()
-            self.assertEqual(data, ['EXPECTED'])
-    
-
+        with mock.patch('builtins.open', mock.mock_open(read_data='EXPECTED')) as MockedFileObj:
+            data = self.fObj.read_file()
+            self.assertEqual(data, ['EXPECTED']) # check if read_file works correctly
+            MockedFileObj.assert_called_with(self.fObj.filename, 'r') # if mock_open function receive a correct file path
+            
+    def test_writeFile(self):
+        
+        with mock.patch('builtins.open', mock.mock_open()) as MockedFileObj:
+            self.fObj.write_file('FAKE', 'w')
+            MockedFileObj.assert_called_with(self.fObj.filename, 'w')
+            mock_file_handle = MockedFileObj()
+            mock_file_handle.write.assert_called_once_with('FAKE\n')

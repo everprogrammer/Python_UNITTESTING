@@ -28,7 +28,7 @@ class Files:
     def write_file(self, content, mode):
         if self.filename:       
             with open(self.filename, mode) as file_to_write:
-                file_to_write.writelines(str(content))
+                file_to_write.write(str(content) + '\n')
             return 'Writing done!'
         else:
             raise ValueError('Filename is not set!')
