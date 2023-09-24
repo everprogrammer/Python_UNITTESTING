@@ -38,6 +38,12 @@ class Files:
 
     def get_memory(self):
         return self.memory
+    
+    def greet(self, name=None):
+        if name:
+            print(f'Hello {name}!')
+        else:
+            print('Hello there!')
 
 # f = Files('data.txt')
 # data = f.read_file()

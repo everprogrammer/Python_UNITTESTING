@@ -1,6 +1,7 @@
 import unittest
 import mock
 from OOP_File.files import Files
+from io import StringIO
 
 
 """
@@ -49,9 +50,15 @@ class TestFiles(unittest.TestCase):
             MockedFileObj.assert_called_with(self.fObj.filename, 'r') # if mock_open function receive a correct file path
             
     def test_writeFile(self):
-        
+
         with mock.patch('builtins.open', mock.mock_open()) as MockedFileObj:
             self.fObj.write_file('FAKE', 'w')
             MockedFileObj.assert_called_with(self.fObj.filename, 'w')
             mock_file_handle = MockedFileObj()
             mock_file_handle.write.assert_called_once_with('FAKE\n')
+
+    def test_Greeting(self):
+
+        with mock.patch('sys.stdout', new=StringIO()) as FakeOutStream:
+            self.fObj.greet('Amir')
+            self.assertEqual(FakeOutStream.getvalue(), 'Hello Amir!\n')
